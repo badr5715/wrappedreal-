@@ -24,7 +24,7 @@ header {
     background: linear-gradient(135deg, #111827, #2563eb);
     color: white;
     text-align: center;
-    padding: 40px 20px 25px;
+    padding: 40px 20px 25px; 
 }
 
 header h1 {
@@ -232,4 +232,5 @@ footer p {
 
     article img {
         height: 220px;
+    
     }
