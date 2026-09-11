@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+
+/* ================================
+   NAVIGATIE
+   ================================ */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Verschillende kleuren voor de menu-items */
+
+.nav-1 {
+    background-color: #2563eb;
+}
+
+.nav-2 {
+    background-color: #16a34a;
+}
+
+.nav-3 {
+    background-color: #ea580c;
+}
+
+.nav-4 {
+    background-color: #9333ea;
+}
+
+.nav-5 {
+    background-color: #dc2626;
+}
+
+/* Effect wanneer je met je muis over een link gaat */
+
+nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    color: #111827;
+}
+
+
+/* ================================
+   MAIN
+   ================================ */
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* ================================
+   ARTIKELEN
+   ================================ */
+
+article {
+    margin-bottom: 40px;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+/* Het artikel komt iets omhoog als je eroverheen gaat */
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+article h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+article p {
+    max-width: 750px;
+    margin: 10px auto;
+    font-size: 17px;
+}
+
+
+/* ================================
+   AFBEELDINGEN
+   ================================ */
+
+article img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================================
+   KLEUREN VAN DE SECTIES
+   ================================ */
+
+.color-1 {
+    background-color: #dbeafe;
+}
+
+.color-2 {
+    background-color: #dcfce7;
+}
+
+.color-3 {
+    background-color: #ffedd5;
+}
+
+.color-4 {
+    background-color: #f3e8ff;
+}
+
+.color-5 {
+    background-color: #fee2e2;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
+/* ================================
+   MOBIELE VERSIE
+   ================================ */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 15px 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 220px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    article {
+        padding: 25px 15px;
+        margin-bottom: 25px;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+
+    article img {
+        height: 220px;
+    }
+}
